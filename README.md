@@ -105,7 +105,7 @@
 <div align="center">
 
  
-  :robot:💡 **Inspiración Automática*
+  :robot:💡 **Inspiración Automática**
  
 
 📅 **Fecha de actualización:**
