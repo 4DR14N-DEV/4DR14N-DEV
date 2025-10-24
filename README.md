@@ -95,6 +95,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adrianrestrepo14/)
 
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/4DR14N_DEV)
+
 📧 **Email:** <adrianrpo23@gmail.com>
 📍 **Ubicación:** Medellín, Colombia
 
