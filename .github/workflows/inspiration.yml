@@ -55,7 +55,7 @@ jobs:
           QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
           ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/[\/&]/\\&/g')
 
-          NEW_CONTENT="## Inspiración — ${DATE}\n\n**Frase del día:**\n> ${QUOTE_ESCAPED}\n\n**Acción recomendada:** ${ACTION_ESCAPED}\n\n_Actualizado automáticamente._"
+          NEW_CONTENT="## 💡 Inspiración automática — ${DATE}\n\n💬 **Frase del día:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Acción recomendada:** ${ACTION_ESCAPED}\n\n_Actualizado automáticamente cada 12 horas._"
 
           # 4️⃣ Reemplazar bloque en README.md usando AWK
           awk -v new_content="$NEW_CONTENT" '
