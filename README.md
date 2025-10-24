@@ -95,28 +95,35 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adrianrestrepo14/)
 
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/4DR14N_DEV)
-
 📧 **Email:** <adrianrpo23@gmail.com>
-📍 **Ubicación:** Medellín, Colombia  
+📍 **Ubicación:** Medellín, Colombia
 
 ---
 
+### 🚀 Automated Features
+
+[![Inspiration Workflow](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml/badge.svg)](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml)
+*Daily inspiration and weather updates powered by AI and GitHub Actions.*
+
+---
 
 <!--START_SECTION:inspiracion-->
-## 🤖🌤️ **_Inspiración automática_**  ---- _2025-10-24 03:17:24_
+## 🤖🌤️ ***Automated Daily Inspiration*** ---- *2025-10-24 03:17:24*
 
-📍 **Ubicación:** Medellín, CO
+> **🌟 Powered by AI & GitHub Actions**
+> This section is automatically updated every 12 hours with fresh inspiration, weather, and actionable advice to fuel your coding journey!
 
-🌡️ **Clima:** Medellín : Partly cloudy +16°C ↓5km/h
+📍 **Location:** Medellín, CO
 
-💬 **Frase del día:**
+🌡️ **Weather:** Medellín : Partly cloudy +16°C ↓5km/h
+
+💬 **Daily Quote:**
 > Cada línea de código es un paso hacia la maestría; la disciplina y la mejora continua son las claves del éxito. No subestimes el poder de la práctica diaria.
 
-🛠️ **Acción recomendada:** Dedica 30 minutos a aprender un nuevo concepto en tu lenguaje de programación favorito.
+🛠️ **Recommended Action:** Dedica 30 minutos a aprender un nuevo concepto en tu lenguaje de programación favorito.
 
-_Actualizado automáticamente cada 12 horas._
+*Updated automatically every 12 hours via [Inspiration Workflow](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml).*
 <!--END_SECTION:inspiracion-->
-
 
 ---
 
