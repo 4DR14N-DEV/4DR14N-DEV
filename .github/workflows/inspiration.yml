@@ -1,59 +1,89 @@
-name: 💡 Inspiración Diaria
+name: 🪄 Actualizar frase inspiradora
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *" # Cada 12 horas
+  workflow_dispatch: # Permite ejecutarlo manualmente
 
 permissions:
   contents: write
 
 jobs:
-  inspiracion:
+  update-activity:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
 
-      - run: sudo apt-get install -y jq curl
+      - name: Instalar dependencias necesarias
+        run: sudo apt-get install -y jq curl
 
-      - run: |
+      - name: Generar frase inspiradora con OpenAI
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MAX_TOKENS: "300"
+          MODEL: "gpt-4o-mini"
+        run: |
           set -euo pipefail
 
-          PROMPT="Genera una frase inspiradora (1-2 oraciones) sobre programación y mejora continua. Luego, una sugerencia práctica (1 línea) para el día. Formato: {\"quote\": \"frase\", \"action\": \"acción\"}"
+          # 1️⃣ Crear prompt para OpenAI
+          PROMPT="Eres un asistente conciso y motivador. Genera una frase inspiradora (1-2 oraciones) enfocada en programación, disciplina y mejora continua. Luego agrega una sugerencia corta (1 línea) de acción práctica para el día relacionada con programación. Formato de salida: {\"quote\": \"<frase>\", \"action\": \"<acción>\"}"
 
+          # 2️⃣ Llamar a la API de OpenAI
           RESPONSE=$(curl -sS https://api.openai.com/v1/chat/completions \
             -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
-            -d "{\"model\": \"gpt-4o-mini\", \"messages\": [{\"role\": \"user\", \"content\": \"$PROMPT\"}], \"max_tokens\": 300, \"temperature\": 0.8}")
+            -H "Authorization: Bearer ${OPENAI_API_KEY}" \
+            -d "$(jq -n \
+              --arg model "$MODEL" \
+              --arg prompt "$PROMPT" \
+              --arg max_tokens "$MAX_TOKENS" \
+              '{model: $model, messages: [{role: "user", content: $prompt}], max_tokens: ($max_tokens | tonumber), temperature: 0.8, n: 1}')")
 
           CHOICE=$(echo "$RESPONSE" | jq -r '.choices[0].message.content // empty')
 
           if [ -z "$CHOICE" ]; then
-            echo "Error: OpenAI no devolvió contenido válido"
+            echo "⚠️ Error: OpenAI no devolvió texto válido"
+            echo "$RESPONSE"
             exit 1
           fi
 
+          # 3️⃣ Procesar datos para insertar en README
           DATE=$(date '+%Y-%m-%d %H:%M:%S')
           QUOTE=$(echo "$CHOICE" | jq -r '.quote // empty' 2>/dev/null || echo "$CHOICE")
-          ACTION=$(echo "$CHOICE" | jq -r '.action // empty' 2>/dev/null || echo "")
+          ACTION_LINE=$(echo "$CHOICE" | jq -r '.action // empty' 2>/dev/null || echo "")
 
           QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
-          ACTION_ESCAPED=$(echo "$ACTION" | sed 's/[\/&]/\\&/g')
+          ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/[\/&]/\\&/g')
 
-          NEW_CONTENT="## 💡 Inspiración — ${DATE}\n\n💬 **Frase:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Acción:** ${ACTION_ESCAPED}\n\n_Automatizado._"
+          NEW_CONTENT="## Inspiración — ${DATE}\n\n**Frase del día:**\n> ${QUOTE_ESCAPED}\n\n**Acción recomendada:** ${ACTION_ESCAPED}\n\n_Actualizado automáticamente._"
 
+          # 4️⃣ Reemplazar bloque en README.md usando AWK
           awk -v new_content="$NEW_CONTENT" '
-            /<!--START_SECTION:inspiracion-->/ {print; print new_content; f=1; next}
-            /<!--END_SECTION:inspiracion-->/ {f=0}
-            !f
+            BEGIN {in_block=0}
+            /<!--START_SECTION:inspiracion-->/ {
+              print;
+              print new_content;
+              in_block=1;
+              next
+            }
+            /<!--END_SECTION:inspiracion-->/ {
+              in_block=0
+            }
+            !in_block
           ' README.md > README.tmp && mv README.tmp README.md
 
-          echo "Inspiración actualizada."
+          echo "✅ README actualizado correctamente con la nueva inspiración."
 
-      - run: |
-          git config user.name "Inspiration Bot"
-          git config user.email "bot@4drian.dev"
+      - name: Commit & Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --staged --quiet || git commit -m "💡 Actualizar inspiración" && git push
+          if git diff --staged --quiet; then
+            echo "Sin cambios que subir."
+          else
+            git commit -m "✨ Actualización automática de inspiración [skip ci]"
+            git push origin HEAD:main
+          fi
 
 

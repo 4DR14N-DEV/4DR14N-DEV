@@ -95,20 +95,36 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adrianrestrepo14/)
 
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/4DR14N_DEV)
+
 📧 **Email:** <adrianrpo23@gmail.com>
 📍 **Ubicación:** Medellín, Colombia
 
 ---
 
 <!--START_SECTION:inspiracion-->
+<<<<<<< HEAD
 ## 💡 Inspiración — 2025-10-24 15:11:18
 
 💬 **Frase:**
 > Cada línea de código es un paso hacia la maestría; la disciplina y la mejora continua son las claves del éxito.
+=======
+## 🤖🌤️ **_Automated Inspiration_** ---- _2025-10-24 12:36:06 UTC_
+>>>>>>> ebc9a9b71cced0c02fe0d27941e1e7ceb2dc0a6a
 
 🛠️ **Acción:** Dedica 30 minutos a aprender un nuevo concepto en tu lenguaje de programación favorito.
 
+<<<<<<< HEAD
 _Automatizado._
+=======
+🌡️ **Weather:** Medellín : Partly cloudy +16°C ↗4km/h
+
+💬 **Daily Quote:**
+> 
+
+🛠️ **Recommended Action:** 
+
+_Updated automatically every 12 hours._
+>>>>>>> ebc9a9b71cced0c02fe0d27941e1e7ceb2dc0a6a
 <!--END_SECTION:inspiracion-->
 
 ---
