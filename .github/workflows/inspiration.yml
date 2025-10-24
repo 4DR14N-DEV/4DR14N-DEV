@@ -35,7 +35,7 @@ jobs:
           # 2️⃣ Crear prompt para OpenAI
           PROMPT="Eres un asistente conciso y motivador. Genera una frase inspiradora (1-2 oraciones) enfocada en programación, disciplina y mejora continua. Luego agrega una sugerencia corta (1 línea) de acción práctica para el día relacionada con programación (ej: 'Lee 10 líneas de código open-source', 'Resuelve un kata sencillo'). Formato de salida: {\"quote\": \"<frase>\", \"action\": \"<acción>\"}"
 
-          # 3️⃣ Llamar a la API de OpenAI (sin bloque multilínea)
+          # 3️⃣ Llamar a la API de OpenAI
           RESPONSE=$(curl -sS https://api.openai.com/v1/chat/completions \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${OPENAI_API_KEY}" \
@@ -53,25 +53,44 @@ jobs:
             exit 1
           fi
 
-          # 4️⃣ Crear archivo activity.md
+          # 4️⃣ Procesar datos para insertar en README
           DATE=$(date '+%Y-%m-%d %H:%M:%S')
-          {
-            echo "## 🌤️ Clima y frase inspiradora"
-            echo ""
-            echo "**Última actualización:** ${DATE}"
-            echo ""
-            echo "**Ciudad:** ${WEATHER_LINE}"
-            echo ""
-            echo "🧠 **Inspiración del día:**"
-            echo "\`\`\`"
-            echo "$CHOICE"
-            echo "\`\`\`"
-          } > activity.md
+          QUOTE=$(echo "$CHOICE" | jq -r '.quote // empty' 2>/dev/null || echo "$CHOICE")
+          ACTION_LINE=$(echo "$CHOICE" | jq -r '.action // empty' 2>/dev/null || echo "")
 
-      - name: Subir cambios al repositorio
+          QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
+          ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/[\/&]/\\&/g')
+          WEATHER_ESCAPED=$(echo "$WEATHER_LINE" | sed 's/[\/&]/\\&/g')
+
+          NEW_CONTENT="## 🌤️ Inspiración automática — ${DATE}\n\n📍 **Ubicación:** ${CITY}, ${COUNTRY}\n\n🌡️ **Clima:** ${WEATHER_ESCAPED}\n\n💬 **Frase del día:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Acción recomendada:** ${ACTION_ESCAPED}\n\n_Actualizado automáticamente cada 12 horas._"
+
+          # 5️⃣ Reemplazar bloque en README.md usando AWK (más seguro que sed)
+          awk -v new_content="$NEW_CONTENT" '
+            BEGIN {in_block=0}
+            /<!--START_SECTION:inspiracion-->/ {
+              print;
+              print new_content;
+              in_block=1;
+              next
+            }
+            /<!--END_SECTION:inspiracion-->/ {
+              in_block=0
+            }
+            !in_block
+          ' README.md > README.tmp && mv README.tmp README.md
+
+          echo "✅ README actualizado correctamente con la nueva inspiración."
+
+      - name: Commit & Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add activity.md
-          git commit -m "✨ Actualización automática de clima y frase inspiradora"
-          git push
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "Sin cambios que subir."
+          else
+            git commit -m "✨ Actualización automática de inspiración [skip ci]"
+            git push origin HEAD:main
+          fi
+
+
