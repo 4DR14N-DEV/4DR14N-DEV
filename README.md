@@ -101,8 +101,9 @@
 
 ---
 
-### ☁️ Clima y frase inspiradora
-Consulta aquí 👉 [activity.md](./activity.md)
+<!--START_SECTION:inspiracion-->
+🕓 Actualizando inspiración...
+<!--END_SECTION:inspiracion-->
 
 ---
 
