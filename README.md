@@ -101,6 +101,11 @@
 
 ---
 
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+---
+
 ### 📊 Estadísticas de GitHub  
 
 <p align="center">
