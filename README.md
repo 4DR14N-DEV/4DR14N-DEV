@@ -101,8 +101,7 @@
 
 ---
 
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
+![Actualizar frase inspiradora y clima](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml/badge.svg)
 
 ---
 
