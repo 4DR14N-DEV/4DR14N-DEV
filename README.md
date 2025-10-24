@@ -4,7 +4,7 @@
 
 <p align="center">
   Estudiante de <strong>Desarrollo de Software</strong><br>
-  Curioso y apasionado por la tecnología, Herramientas de IA, la lógica y la creación de soluciones que realmente aporten. <br>
+  Curioso & apasionado por la tecnología, Herramientas de IA, la lógica & la creación de soluciones que realmente aporten. <br>
   Siempre aprendiendo, siempre mejorando. 💡
 </p>
 
@@ -12,10 +12,10 @@
 
 ### Sobre mí  
 
-:pencil: Estudiante de **programación y desarrollo web**.  
-:computer: Aprendiendo **Node.js, JavaScript, HTML, CSS, MongoDB, Docker, Herramientas de IA, Automatizacion, Git y GitHub**.  
-:brain: Explorando el mundo del desarrollo **backend y frontend**.  
-:muscle: Creciendo paso a paso con constancia, disciplina y curiosidad.  
+:pencil: Estudiante de **Desarrollo de Software**.  
+:computer: Aprendiendo **Node.js, JavaScript, HTML, CSS, MongoDB, Docker, Herramientas de IA, Automatizacion, Git & GitHub**.  
+:brain: Explorando el mundo del desarrollo **backend & frontend**.  
+:muscle: Creciendo paso a paso con constancia, disciplina & curiosidad.  
 
 ---
 
@@ -68,9 +68,9 @@
 ### Actualmente
 
 - Fortaleciendo mi **lógica de programación**.  
-- Creando pequeños proyectos con **Node.js y JavaScript**. Y desde el front fortalenciendo mis conocimientos en **HTML y CSS**, aplicando buenas practicas, **SEO basico y diseño responsivo.**
-- Aprendiendo **conceptos de backend y APIs REST**.  
-- Explorando bases de datos con **MongoDB y MySQL**.
+- Creando pequeños proyectos con **Node.js & JavaScript**. & desde el front fortalenciendo mis conocimientos en **HTML y CSS**, aplicando buenas practicas, **SEO basico y diseño responsivo.**
+- Aprendiendo **conceptos de backend & APIs REST**.  
+- Explorando bases de datos con **MongoDB & MySQL**.
 - Experimentando con **herramientas de IA** para mejorar mi productividad.
 - Mejorando mi dominio de **Git y GitHub**.  
 
@@ -78,10 +78,10 @@
 
 ### Próximos objetivos
 
-- Aprender el uso de **Docker** para desarrollo, despliegue y gestión de aplicaciones.
-- Fortalecer mis conocimientos en la creacion y consumo de **APIs RESTful**.
+- Aprender el uso de **Docker** para desarrollo, despliegue & gestión de aplicaciones.
+- Fortalecer mis conocimientos en la creacion & consumo de **APIs RESTful**.
 - Desarrollar mi **primer proyecto completo** (frontend + backend).  
-- Aprender **React.js** y crear interfaces dinámicas.  
+- Aprender **React.js** & crear interfaces dinámicas.  
 - Participar en proyectos colaborativos para ganar experiencia real.  
 
 ---
@@ -103,7 +103,7 @@
 
 
 <!--START_SECTION:inspiracion-->
-## 🌤️ Inspiración automática  --   _2025-10-24 03:17:24_
+## 🤖🌤️ **_Inspiración automática_**  ---- _2025-10-24 03:17:24_
 
 📍 **Ubicación:** Medellín, CO
 
