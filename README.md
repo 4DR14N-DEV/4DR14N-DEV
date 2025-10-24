@@ -1,6 +1,6 @@
 
 <!-- Encabezado principal -->
-<h1 align="center">👋 ¡Hola! Soy <span style="color:#00bfff;">Adrian</span> 👨‍💻</h1>
+<h1 align="center">¡Hola! Soy <span style="color:#00bfff;">Adrian</span> 👨‍💻</h1>
 
 <p align="center">
   Estudiante de <strong>Desarrollo de Software</strong><br>
