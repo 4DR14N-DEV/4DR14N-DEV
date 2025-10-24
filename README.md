@@ -102,23 +102,14 @@
 ---
 
 <!--START_SECTION:inspiracion-->
-<div align="center">
+## 💡 Inspiración automática — 2025-10-24 16:08:47
 
- 
-  :robot:💡 **Inspiración Automática**
- 
+💬 **Frase del día:**
+> La programación es un viaje de disciplina y mejora continua; cada línea de código es un paso hacia tu mejor versión. Recuerda, el progreso se construye con cada pequeño esfuerzo que haces hoy.
 
-📅 **Fecha de actualización:**
+🛠️ **Acción recomendada:** Dedica 30 minutos a aprender un nuevo concepto o herramienta de programación.
 
-🎯 **Frase del día:**  
-
-🚀 **Acción recomendada:**  
-
-<p align="center">
-  <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>
-</p>
-
-</div>
+_Actualizado automáticamente cada 12 horas._
 <!--END_SECTION:inspiracion-->
 
 ---
