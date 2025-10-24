@@ -55,24 +55,7 @@ jobs:
           QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
           ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/[\/&]/\\&/g')
 
-          NEW_CONTENT=$(cat <<EOF
-### :robot:💡 Inspiración Automática — ${DATE}
-
-<div align="center">
-
-✨ **Frase del día:**
-> "${QUOTE_ESCAPED}"
-
-🛠️ **Acción recomendada:**
-> ${ACTION_ESCAPED}
-
-</div>
-
-<p align="center">
- <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>
-</p>
-EOF
-)
+          NEW_CONTENT="## 💡 Inspiración automática — ${DATE}\n\n💬 **Frase del día:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Acción recomendada:** ${ACTION_ESCAPED}\n\n_Actualizado automáticamente cada 12 horas._"
 
           # 4️⃣ Reemplazar bloque en README.md usando AWK
           awk -v new_content="$NEW_CONTENT" '

@@ -102,21 +102,25 @@
 ---
 
 <!--START_SECTION:inspiracion-->
-### :robot:💡 Inspiración Automática — ${DATE}
-
 <div align="center">
 
-✨ **Frase del día:**  
-> "${QUOTE_ESCAPED}"
+┏━━━━━━━━━━━━━━━━━━━━━━━┓  
+┃ :robot:💡 **Inspiración Automática** ┃  
+┗━━━━━━━━━━━━━━━━━━━━━━━┛  
 
-🛠️ **Acción recomendada:**  
+📅 **Fecha de actualización:** ${DATE}  
+
+🎯 **Frase del día:**  
+> ${QUOTE_ESCAPED}
+
+🚀 **Acción recomendada:**  
 > ${ACTION_ESCAPED}
-
-</div>
 
 <p align="center">
   <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>
 </p>
+
+</div>
 <!--END_SECTION:inspiracion-->
 
 ---
