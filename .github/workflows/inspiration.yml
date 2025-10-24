@@ -85,5 +85,3 @@ jobs:
             git commit -m "✨ Actualización automática de inspiración [skip ci]"
             git push origin HEAD:main
           fi
-
-
