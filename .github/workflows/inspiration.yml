@@ -52,10 +52,11 @@ jobs:
           QUOTE=$(echo "$CHOICE" | jq -r '.quote // empty' 2>/dev/null || echo "$CHOICE")
           ACTION_LINE=$(echo "$CHOICE" | jq -r '.action // empty' 2>/dev/null || echo "")
 
-          QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
-          ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/[\/&]/\\&/g')
+          # Escapar caracteres especiales para HTML/Markdown
+          QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/"/\\"/g; s/[\/&]/\\&/g')
+          ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/"/\\"/g; s/[\/&]/\\&/g')
 
-          NEW_CONTENT="## 💡 Inspiración automática — ${DATE}\n\n💬 **Frase del día:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Acción recomendada:** ${ACTION_ESCAPED}\n\n_Actualizado automáticamente cada 12 horas._"
+          NEW_CONTENT="<!--START_SECTION:inspiracion-->\n<div align=\"center\">\n\n\n :robot:💡 **Inspiración Automática**  \n\n📅 **Fecha de actualización:** ${DATE}  \n\n🎯 **Frase del día:**  \n> ${QUOTE_ESCAPED}\n\n🚀 **Acción recomendada:**  \n> ${ACTION_ESCAPED}\n\n<p align=\"center\">\n  <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>\n</p>\n\n</div>\n<!--END_SECTION:inspiracion-->"
 
           # 4️⃣ Reemplazar bloque en README.md usando AWK
           awk -v new_content="$NEW_CONTENT" '
@@ -85,3 +86,4 @@ jobs:
             git commit -m "✨ Actualización automática de inspiración [skip ci]"
             git push origin HEAD:main
           fi
+
