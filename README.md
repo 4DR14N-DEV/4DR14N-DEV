@@ -108,13 +108,11 @@
 ┃ :robot:💡 **Inspiración Automática** ┃  
 ┗━━━━━━━━━━━━━━━━━━━━━━━┛  
 
-📅 **Fecha de actualización:** ${DATE}  
+📅 **Fecha de actualización:**
 
 🎯 **Frase del día:**  
-> ${QUOTE_ESCAPED}
 
 🚀 **Acción recomendada:**  
-> ${ACTION_ESCAPED}
 
 <p align="center">
   <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>
