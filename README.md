@@ -101,7 +101,8 @@
 
 ---
 
-![Actualizar frase inspiradora y clima](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml/badge.svg)
+### ☁️ Clima y frase inspiradora
+Consulta aquí 👉 [activity.md](./activity.md)
 
 ---
 
