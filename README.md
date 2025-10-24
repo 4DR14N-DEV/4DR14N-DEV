@@ -100,29 +100,15 @@
 
 ---
 
-### 🚀 Automated Features
-
-[![Inspiration Workflow](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml/badge.svg)](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml)
-*Daily inspiration and weather updates powered by AI and GitHub Actions.*
-
----
-
 <!--START_SECTION:inspiracion-->
-## 🤖🌤️ ***Automated Daily Inspiration*** ---- *2025-10-24 03:17:24*
+## 💡 Inspiración — 2025-10-24 15:11:18
 
-> **🌟 Powered by AI & GitHub Actions**
-> This section is automatically updated every 12 hours with fresh inspiration, weather, and actionable advice to fuel your coding journey!
+💬 **Frase:**
+> Cada línea de código es un paso hacia la maestría; la disciplina y la mejora continua son las claves del éxito.
 
-📍 **Location:** Medellín, CO
+🛠️ **Acción:** Dedica 30 minutos a aprender un nuevo concepto en tu lenguaje de programación favorito.
 
-🌡️ **Weather:** Medellín : Partly cloudy +16°C ↓5km/h
-
-💬 **Daily Quote:**
-> Cada línea de código es un paso hacia la maestría; la disciplina y la mejora continua son las claves del éxito. No subestimes el poder de la práctica diaria.
-
-🛠️ **Recommended Action:** Dedica 30 minutos a aprender un nuevo concepto en tu lenguaje de programación favorito.
-
-*Updated automatically every 12 hours via [Inspiration Workflow](https://github.com/4DR14N-DEV/4DR14N-DEV/actions/workflows/inspiration.yml).*
+_Automatizado._
 <!--END_SECTION:inspiracion-->
 
 ---

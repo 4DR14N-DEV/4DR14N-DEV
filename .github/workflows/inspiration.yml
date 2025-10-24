@@ -1,129 +1,59 @@
-name: 🌟 Daily Inspiration & Weather Update
+name: 💡 Inspiración Diaria
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
-  workflow_dispatch:  # Allows manual execution
-
-# Prevent concurrent runs
-concurrency:
-  group: inspiration-update
-  cancel-in-progress: false
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-inspiration:
-    name: Update Daily Inspiration
+  inspiracion:
     runs-on: ubuntu-latest
     steps:
-      - name: 📥 Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
 
-      - name: 🛠️ Install Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq curl
+      - run: sudo apt-get install -y jq curl
 
-      - name: 🌤️ Fetch Weather Data
-        id: weather
-        run: |
-          CITY="Medellín"
-          COUNTRY="CO"
-          WEATHER_RAW=$(curl -s "https://wttr.in/${CITY}?format=%l+:+%C+%t+%w")
-          WEATHER_LINE=$(echo "${WEATHER_RAW}" | tr -d '\r\n')
-          echo "weather=${WEATHER_LINE}" >> $GITHUB_OUTPUT
-          echo "🌡️ Weather fetched: ${WEATHER_LINE}"
-
-      - name: 🤖 Generate Inspiration with AI
-        id: inspiration
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          CITY: "Medellín"
-          COUNTRY: "CO"
-          MAX_TOKENS: "300"
-          MODEL: "gpt-4o-mini"
-        run: |
+      - run: |
           set -euo pipefail
 
-          # Enhanced prompt for more engaging content
-          PROMPT="You are a motivational assistant specializing in programming and personal growth. Generate an inspiring quote (1-2 sentences) focused on coding, discipline, and continuous improvement. Then, provide a short, actionable suggestion (1 line) for the day related to programming (e.g., 'Review 10 lines of open-source code', 'Solve a simple coding challenge'). Output in JSON format: {\"quote\": \"<quote>\", \"action\": \"<action>\"}"
+          PROMPT="Genera una frase inspiradora (1-2 oraciones) sobre programación y mejora continua. Luego, una sugerencia práctica (1 línea) para el día. Formato: {\"quote\": \"frase\", \"action\": \"acción\"}"
 
-          # Call OpenAI API
           RESPONSE=$(curl -sS https://api.openai.com/v1/chat/completions \
             -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${OPENAI_API_KEY}" \
-            -d "$(jq -n \
-              --arg model "$MODEL" \
-              --arg prompt "$PROMPT" \
-              --arg max_tokens "$MAX_TOKENS" \
-              '{model: $model, messages: [{role: "user", content: $prompt}], max_tokens: ($max_tokens | tonumber), temperature: 0.8, n: 1}')")
+            -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
+            -d "{\"model\": \"gpt-4o-mini\", \"messages\": [{\"role\": \"user\", \"content\": \"$PROMPT\"}], \"max_tokens\": 300, \"temperature\": 0.8}")
 
           CHOICE=$(echo "$RESPONSE" | jq -r '.choices[0].message.content // empty')
 
           if [ -z "$CHOICE" ]; then
-            echo "❌ Error: OpenAI did not return valid content"
-            echo "Response: $RESPONSE"
+            echo "Error: OpenAI no devolvió contenido válido"
             exit 1
           fi
 
-          # Parse JSON response
+          DATE=$(date '+%Y-%m-%d %H:%M:%S')
           QUOTE=$(echo "$CHOICE" | jq -r '.quote // empty' 2>/dev/null || echo "$CHOICE")
-          ACTION_LINE=$(echo "$CHOICE" | jq -r '.action // empty' 2>/dev/null || echo "")
+          ACTION=$(echo "$CHOICE" | jq -r '.action // empty' 2>/dev/null || echo "")
 
-          # Escape special characters
           QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
-          ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/[\/&]/\\&/g')
-          WEATHER_ESCAPED=$(echo "${{ steps.weather.outputs.weather }}" | sed 's/[\/&]/\\&/g')
+          ACTION_ESCAPED=$(echo "$ACTION" | sed 's/[\/&]/\\&/g')
 
-          # Generate timestamp
-          DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          NEW_CONTENT="## 💡 Inspiración — ${DATE}\n\n💬 **Frase:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Acción:** ${ACTION_ESCAPED}\n\n_Automatizado._"
 
-          # Create new content block
-          NEW_CONTENT="## 🤖🌤️ **_Automated Inspiration_** ---- _${DATE}_\n\n📍 **Location:** ${{ env.CITY }}, ${{ env.COUNTRY }}\n\n🌡️ **Weather:** ${{ steps.weather.outputs.weather }}\n\n💬 **Daily Quote:**\n> ${QUOTE_ESCAPED}\n\n🛠️ **Recommended Action:** ${ACTION_ESCAPED}\n\n_Updated automatically every 12 hours._"
-
-          echo "content<<EOF" >> $GITHUB_OUTPUT
-          echo -e "$NEW_CONTENT" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-          echo "✅ Inspiration generated successfully"
-
-      - name: 📝 Update README.md
-        run: |
-          awk -v new_content="${{ steps.inspiration.outputs.content }}" '
-            BEGIN {in_block=0}
-            /<!--START_SECTION:inspiracion-->/ {
-              print;
-              print new_content;
-              in_block=1;
-              next
-            }
-            /<!--END_SECTION:inspiracion-->/ {
-              in_block=0
-            }
-            !in_block
+          awk -v new_content="$NEW_CONTENT" '
+            /<!--START_SECTION:inspiracion-->/ {print; print new_content; f=1; next}
+            /<!--END_SECTION:inspiracion-->/ {f=0}
+            !f
           ' README.md > README.tmp && mv README.tmp README.md
 
-          echo "📄 README.md updated with new inspiration"
+          echo "Inspiración actualizada."
 
-      - name: 🚀 Commit and Push Changes
-        run: |
-          git config --global user.name "Inspiration Bot"
-          git config --global user.email "inspiration@4drian-dev.dev"
-
+      - run: |
+          git config user.name "Inspiration Bot"
+          git config user.email "bot@4drian.dev"
           git add README.md
-          if git diff --staged --quiet; then
-            echo "ℹ️ No changes to commit"
-          else
-            git commit -m "🌟 Update daily inspiration and weather [skip ci]"
-            if ! git push origin HEAD:main; then
-              echo "❌ Failed to push changes"
-              exit 1
-            fi
-            echo "✅ Changes committed and pushed successfully"
-          fi
+          git diff --staged --quiet || git commit -m "💡 Actualizar inspiración" && git push
 
 
