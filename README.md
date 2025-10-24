@@ -102,10 +102,21 @@
 ---
 
 <!--START_SECTION:inspiracion-->
-print;
-              print new_content;
-              in_block=1;
-              next
+### :robot:💡 Inspiración Automática — ${DATE}
+
+<div align="center">
+
+✨ **Frase del día:**  
+> "${QUOTE_ESCAPED}"
+
+🛠️ **Acción recomendada:**  
+> ${ACTION_ESCAPED}
+
+</div>
+
+<p align="center">
+  <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>
+</p>
 <!--END_SECTION:inspiracion-->
 
 ---
