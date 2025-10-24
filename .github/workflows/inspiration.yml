@@ -1,0 +1,74 @@
+name: 🪄 Actualizar frase inspiradora y clima
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Cada 12 horas
+  workflow_dispatch: # Permite ejecutarlo manualmente
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias necesarias
+        run: sudo apt-get install -y jq curl
+
+      - name: Generar clima y frase con OpenAI
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CITY: "Medellín"
+          COUNTRY: "CO"
+          MAX_TOKENS: "300"
+          MODEL: "gpt-4o-mini"
+        run: |
+          set -euo pipefail
+
+          # 1️⃣ Obtener clima (wttr.in no necesita API key)
+          WEATHER_RAW=$(curl -s "https://wttr.in/${CITY}?format=%l+:+%C+%t+%w")
+          WEATHER_LINE=$(echo "${WEATHER_RAW}" | tr -d '\r\n')
+
+          # 2️⃣ Crear prompt para OpenAI
+          PROMPT="Eres un asistente conciso y motivador. Genera una frase inspiradora (1-2 oraciones) enfocada en programación, disciplina y mejora continua. Luego agrega una sugerencia corta (1 línea) de acción práctica para el día relacionada con programación (ej: 'Lee 10 líneas de código open-source', 'Resuelve un kata sencillo'). Formato de salida: {\"quote\": \"<frase>\", \"action\": \"<acción>\"}"
+
+          # 3️⃣ Llamar a la API de OpenAI (sin bloque multilínea)
+          RESPONSE=$(curl -sS https://api.openai.com/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${OPENAI_API_KEY}" \
+            -d "$(jq -n \
+              --arg model "$MODEL" \
+              --arg prompt "$PROMPT" \
+              --arg max_tokens "$MAX_TOKENS" \
+              '{model: $model, messages: [{role: "user", content: $prompt}], max_tokens: ($max_tokens | tonumber), temperature: 0.8, n: 1}')")
+
+          CHOICE=$(echo "$RESPONSE" | jq -r '.choices[0].message.content // empty')
+
+          if [ -z "$CHOICE" ]; then
+            echo "⚠️ Error: OpenAI no devolvió texto válido"
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+          # 4️⃣ Crear archivo activity.md
+          DATE=$(date '+%Y-%m-%d %H:%M:%S')
+          {
+            echo "## 🌤️ Clima y frase inspiradora"
+            echo ""
+            echo "**Última actualización:** ${DATE}"
+            echo ""
+            echo "**Ciudad:** ${WEATHER_LINE}"
+            echo ""
+            echo "🧠 **Inspiración del día:**"
+            echo "\`\`\`"
+            echo "$CHOICE"
+            echo "\`\`\`"
+          } > activity.md
+
+      - name: Subir cambios al repositorio
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add activity.md
+          git commit -m "✨ Actualización automática de clima y frase inspiradora"
+          git push
