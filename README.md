@@ -104,7 +104,6 @@
 
 
 <!--START_SECTION:inspiracion-->
-<!--START_SECTION:inspiracion-->
 <div align="center">
 
 
@@ -123,29 +122,6 @@
 </p>
 
 </div>
-<!--END_SECTION:inspiracion-->
-<!--START_SECTION:inspiracion-->
-<!--START_SECTION:inspiracion-->
-<div align="center">
-
-
- :robot:💡 **Inspiración Automática**  
-
-📅 **Fecha de actualización:** 2025-10-29 12:17:21  
-
-🎯 **Frase del día:**  
-> Cada línea de código que escribes es un paso hacia la maestría; la disciplina te llevará más lejos de lo que imaginas.
-
-🚀 **Acción recomendada:**  
-> Dedica 30 minutos hoy a aprender algo nuevo en tu lenguaje de programación favorito.
-
-<p align="center">
-  <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>
-</p>
-
-</div>
-<!--END_SECTION:inspiracion-->
-<!--END_SECTION:inspiracion-->
 <!--END_SECTION:inspiracion-->
 
 
