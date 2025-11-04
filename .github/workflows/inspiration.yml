@@ -56,34 +56,9 @@ jobs:
           QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/"/\\"/g; s/[\/&]/\\&/g')
           ACTION_ESCAPED=$(echo "$ACTION_LINE" | sed 's/"/\\"/g; s/[\/&]/\\&/g')
 
-          NEW_CONTENT="<!--START_SECTION:inspiracion-->\n<div align=\"center\">\n\n\n :robot:💡 **Inspiración Automática**  \n\n📅 **Fecha de actualización:** ${DATE}  \n\n🎯 **Frase del día:**  \n> ${QUOTE_ESCAPED}\n\n🚀 **Acción recomendada:**  \n> ${ACTION_ESCAPED}\n\n<p align=\"center\">\n  <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>\n</p>\n\n</div>\n<!--END_SECTION:inspiracion-->"
+          NEW_CONTENT="<!--START_SECTION:inspiracion-->\n<div align=\"center\">\n\n :robot:💡 **Inspiración Automática**  \n\n📅 **Fecha de actualización:** ${DATE}  \n\n🎯 **Frase del día:**  \n> ${QUOTE_ESCAPED}\n\n🚀 **Acción recomendada:**  \n> ${ACTION_ESCAPED}\n\n<p align=\"center\">\n  <sub>Actualizado automáticamente cada 12 horas por 🪄 GitHub Actions</sub>\n</p>\n\n</div>\n<!--END_SECTION:inspiracion-->"
 
-          # 4️⃣ Reemplazar bloque en README.md usando AWK
-          awk -v new_content="$NEW_CONTENT" '
-            BEGIN {in_block=0}
-            /<!--START_SECTION:inspiracion-->/ {
-              print;
-              print new_content;
-              in_block=1;
-              next
-            }
-            /<!--END_SECTION:inspiracion-->/ {
-              in_block=0
-            }
-            !in_block
-          ' README.md > README.tmp && mv README.tmp README.md
+          # 4️⃣ Reemplazar bloque en README.md (sin duplicar)
+          sed -i '/<!--START_SECTION:inspiracion-->/,/<!--END_SECTION:inspiracion-->/c\'"$NEW_CONTENT" README.md
 
           echo "✅ README actualizado correctamente con la nueva inspiración."
-
-      - name: Commit & Push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          if git diff --staged --quiet; then
-            echo "Sin cambios que subir."
-          else
-            git commit -m "✨ Actualización automática de inspiración [skip ci]"
-            git push origin HEAD:main
-          fi
-
