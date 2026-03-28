@@ -36,7 +36,7 @@
 
 ```
 📍 Medellín, Colombia | 🎓 Estudiante de Desarrollo de Software
-⏱️ 8 meses de formación intensiva | 🚀 En camino al primer laburo
+⏱️ 8 meses de formación intensiva | 🚀 En camino al primer trabajo
 ```
 
 Empecé a programar hace **8 meses** sin experiencia previa. Desde entonces:
