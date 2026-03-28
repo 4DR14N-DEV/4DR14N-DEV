@@ -263,8 +263,31 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 <div align="center">
 
+<!-- Stats principales -->
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+
+<!-- Lenguajes más usados -->
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=4DR14N-DEV&layout=compact&theme=tokyonight&hide_border=true" alt="Top Langs" />
+
+</div>
+
+---
+
+## 🔥 Streak Stats
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+
+</div>
+
+---
+
+## 🏆 Trofeos
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=4DR14N-DEV&theme=tokyonight&no-frame=true&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
@@ -278,7 +301,7 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" alt="Snake animation" width="800" />
 
 </div>
 
