@@ -283,11 +283,18 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 ---
 
-## 🏆 Trofeos
+## 🏆 GitHub Trofeos & Resumen
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=4DR14N-DEV&theme=tokyonight&no-frame=true&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+<!-- Tarjeta de resumen de stats -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=4DR14N-DEV&theme=tokyonight" alt="GitHub Stats Card" />
+
+<!-- Tarjeta de lenguajes -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=4DR14N-DEV&theme=tokyonight" alt="Repos per Language" />
+
+<!-- Productividad -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=4DR14N-DEV&theme=tokyonight&utcOffset=-5" alt="Productive Time" />
 
 </div>
 
