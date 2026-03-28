@@ -246,7 +246,7 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 ### 🚀 Próximos objetivos
 - [ ] Proyecto fullstack (React + Node)
 - [ ] Contribuir a Open Source
-- [ ] Primer laburo como dev
+- [ ] Primer trabajo como dev
 - [ ] Certificaciones en arquitectura
 
 </td>
