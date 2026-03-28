@@ -18,15 +18,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate contribution snake
-        uses: Platypie/contributions-snake@master
+        uses: Platane/snk@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          username: "4DR14N-DEV"
+          github_user_name: ${{ github.repository_owner }}
+          svg_out_path: dist/github-contribution-snake.svg
 
       - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: output
-          build_dir: ./
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
