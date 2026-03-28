@@ -18,8 +18,7 @@
 
 <br/>
 
-<!-- Redes sociales + OpenCode -->
-[![OpenCode](https://img.shields.io/badge/OpenCode-6C63FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01eiIvPjxwYXRoIGQ9Ik0yIDE3bDEwIDUgMTAtNSIvPjxwYXRoIGQ9Ik0yIDEybDEwIDUgMTAtNSIvPjwvc3ZnPg==&logoColor=white)]()
+<!-- Redes sociales -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-yesid-restrepo-8b9725382/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/4DR14N-DEV)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adrianrestrepo14/)
@@ -264,8 +263,22 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=4DR14N-DEV&layout=compact&theme=tokyonight&hide_border=true" alt="Top Langs" />
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- SECCIÓN: SNAKE — Animación de contribuciones                      -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" alt="Snake animation" />
 
 </div>
 
@@ -279,10 +292,11 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 <div align="center">
 
-📧 **adrianrpo23@gmail.com** | 📍 **Medellín, Colombia**
+📧 **adrianrpo23@gmail.com** | 📱 **+57 350 365 0525** | 📍 **Medellín, Colombia**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-yesid-restrepo-8b9725382/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/4DR14N-DEV)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/573503650525)
 
 </div>
 
