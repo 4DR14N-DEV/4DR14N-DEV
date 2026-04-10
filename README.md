@@ -308,7 +308,11 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" alt="Snake animation" width="150" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" />
+</picture>
 
 </div>
 
