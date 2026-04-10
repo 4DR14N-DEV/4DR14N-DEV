@@ -318,10 +318,13 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 <!-- SECCIÓN: CONTACTO                                                 -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-## 📬 ¿Hablamos?
+## 📬 Hablemos
 
 <div align="center">
+¿Buscas un dev junior con hambre de aprender, capacidad real de entregar y mentalidad AI-first?
 
+  Escríbeme — respondo rápido.
+  
 📧 **adrianrpo23@gmail.com** | 📱 **+57 350 365 0525** | 📍 **Medellín, Colombia**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-yesid-restrepo-8b9725382/)
