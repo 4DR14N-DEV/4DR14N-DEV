@@ -277,7 +277,7 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+[<img src="https://github-readme-streak-stats.herokuapp.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true" alt="GitHub Streak" />](https://streak-stats.demolab.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true)
 
 </div>
 
