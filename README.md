@@ -264,8 +264,7 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 <div align="center">
 
 <!-- Stats principales -->
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
-
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=1800" />
 <!-- Lenguajes más usados -->
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=4DR14N-DEV&layout=compact&theme=tokyonight&hide_border=true" alt="Top Langs" />
 
