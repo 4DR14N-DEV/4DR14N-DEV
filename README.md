@@ -13,7 +13,7 @@
 
 <!-- Badges de estado — colores más vibrantes -->
 [![Estudiante](https://img.shields.io/badge/🎓_Estudiante_de_Software-00E5FF?style=flat-square&labelColor=0D1117)]()
-[![8 meses](https://img.shields.io/badge/⏱️_8_meses_aprendiendo-FF6B6B?style=flat-square&labelColor=0D1117)]()
+[![9 meses](https://img.shields.io/badge/⏱️_8_meses_aprendiendo-FF6B6B?style=flat-square&labelColor=0D1117)]()
 [![Medellín](https://img.shields.io/badge/📍_Medellín,_Colombia-00E676?style=flat-square&labelColor=0D1117)]()
 
 <br/>
@@ -36,10 +36,10 @@
 
 ```
 📍 Medellín, Colombia | 🎓 Estudiante de Desarrollo de Software
-⏱️ 8 meses de formación intensiva | 🚀 En camino al primer trabajo
+⏱️ 9 meses de formación intensiva | 🚀 En camino al primer trabajo
 ```
 
-Empecé a programar hace **8 meses** sin experiencia previa. Desde entonces:
+Empecé a programar hace **9 meses** sin experiencia previa. Desde entonces:
 
 - 📚 Completé **21+ certificaciones** en Platzi, FreeCodeCamp, Anthropic y más
 - 🏗️ Construí un **backend REST completo** (Node.js + Express + MySQL)
