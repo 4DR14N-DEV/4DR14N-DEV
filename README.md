@@ -13,7 +13,7 @@
 
 <!-- Badges de estado — colores más vibrantes -->
 [![Estudiante](https://img.shields.io/badge/🎓_Estudiante_de_Software-00E5FF?style=flat-square&labelColor=0D1117)]()
-[![9 meses](https://img.shields.io/badge/⏱️_8_meses_aprendiendo-FF6B6B?style=flat-square&labelColor=0D1117)]()
+[![9 meses](https://img.shields.io/badge/⏱️_9_meses_aprendiendo-FF6B6B?style=flat-square&labelColor=0D1117)]()
 [![Medellín](https://img.shields.io/badge/📍_Medellín,_Colombia-00E676?style=flat-square&labelColor=0D1117)]()
 
 <br/>
