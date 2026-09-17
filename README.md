@@ -48,8 +48,6 @@ Empecé a programar hace **9 meses** sin experiencia previa. Desde entonces:
 
 No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y un stack que crece cada semana.
 
-> *"El código es poesía lógica. La IA es mi pluma."*
-
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
