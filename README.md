@@ -1,24 +1,21 @@
-
 <!-- ╔══════════════════════════════════════════════════════════════════╗ -->
 <!-- ║  Adrian Yesid Restrepo — GitHub Profile README                 ║ -->
-<!-- ║  Estudiante de Desarrollo de Software | AI-Augmented Dev       ║ -->
+<!-- ║  Junior Developer @ e-BFactory | Backend · Drupal · Agentic AI ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════╝ -->
 
 <div align="center">
 
-<!-- Título con animación de escritura — sin manita, más brillante -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&pause=1000&color=00E5FF&center=true&vCenter=true&random=false&width=600&lines=I'm+Adrian+%E2%9A%A1;Backend+Developer+in+training;AI-Augmented+Development;Building+the+future+with+code" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,55:0A4B5C,100:00E5FF&height=200&section=header&text=4DR14N-DEV&fontSize=52&fontColor=FFFFFF&fontAlignY=36&desc=Junior%20Developer%20%40%20e-BFactory&descSize=18&descAlignY=58&animation=fadeIn" alt="4DR14N-DEV" width="100%" />
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1200&color=00E5FF&center=true&vCenter=true&width=520&lines=Backend-oriented+developer;Drupal+%C2%B7+PHP+%C2%B7+Node.js;Agentic+AI+%C2%B7+MCP+%C2%B7+Orchestration" alt="Typing SVG" />
 
 <br/>
 
-<!-- Badges de estado — colores más vibrantes -->
-[![Estudiante](https://img.shields.io/badge/🎓_Estudiante_de_Software-00E5FF?style=flat-square&labelColor=0D1117)]()
-[![9 meses](https://img.shields.io/badge/⏱️_9_meses_aprendiendo-FF6B6B?style=flat-square&labelColor=0D1117)]()
-[![Medellín](https://img.shields.io/badge/📍_Medellín,_Colombia-00E676?style=flat-square&labelColor=0D1117)]()
+![Junior Developer](https://img.shields.io/badge/💼_Junior_Developer-e--BFactory-00E5FF?style=flat-square&labelColor=0D1117)
+![Medellín](https://img.shields.io/badge/📍-Medellín,_Colombia-8E75FF?style=flat-square&labelColor=0D1117)
 
 <br/>
 
-<!-- Redes sociales -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-yesid-restrepo-8b9725382/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/4DR14N-DEV)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/adrianrestrepo14/)
@@ -26,118 +23,123 @@
 
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- SECCIÓN: ABOUT ME                                                 -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
+## 🧬 About Me
+
+**Junior Developer en [e-BFactory](https://ebfactory.com/)**, con enfoque en **backend** y desarrollo sobre **Drupal + PHP**. Participo en el ciclo completo de proyectos web: desarrollo, configuración, despliegue de cambios y administración de contenido.
+
+Complemento mi trabajo con **ingeniería agéntica**: integro agentes de IA, orquestadores y servidores **MCP** en el flujo de desarrollo para acelerar la entrega sin sacrificar calidad.
+
+```yaml
+developer:
+  role:       Junior Developer @ e-BFactory
+  focus:      [Backend, Drupal, Agentic AI]
+  stack:      [PHP, Drupal, Node.js, MySQL]
+  location:   Medellín, Colombia
+```
+
+- 🧱 **Drupal + PHP** — desarrollo y mantenimiento de sitios, configuración en **YAML** y administración de contenido
+- ⚙️ **Drush · DDEV · Fin** — gestión de entornos locales, configuración y operaciones de sitio desde CLI
+- 🤖 **Agentic workflows** — orquestación de agentes, sub-agentes y servidores **MCP** integrados al desarrollo
+- 🎨 **Storybook** — desarrollo de componentes de UI aislados y reutilizables
+
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: SOBRE MÍ — Storytelling                                  -->
+<!-- SECCIÓN: EXPERIENCE                                               -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-## 🧬 Sobre mí
+## 💼 Experience
 
-```
-📍 Medellín, Colombia | 🎓 Estudiante de Desarrollo de Software
-⏱️ 9 meses de formación intensiva | 🚀 En camino al primer trabajo
-```
+### Junior Developer — [e-BFactory](https://ebfactory.com/)
 
-Empecé a programar hace **9 meses** sin experiencia previa. Desde entonces:
+<sub>Medellín, Colombia</sub>
 
-- 📚 Completé **21+ certificaciones** en Platzi, FreeCodeCamp, Anthropic y más
-- 🏗️ Construí un **backend REST completo** (Node.js + Express + MySQL)
-- 🤖 Me especialicé en **AI-Augmented Development** — orquestación de agentes, workflows SDD e integración de IA en el ciclo de desarrollo
-- 🧠 Trabajo con **Claude Code, OpenCode, Gemini, ChatGPT y Copilot** como herramientas de productividad real
-
-No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y un stack que crece cada semana.
+- Desarrollo y mantenimiento de proyectos **Drupal** con **PHP**
+- Gestión de configuración con archivos **YAML** y despliegue de cambios vía **Drush**
+- Operación de entornos locales con **DDEV** y **Fin**
+- Creación, estructuración y administración de contenido en Drupal
+- Desarrollo de componentes de UI con **Storybook**
 
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: STACK — Organizado por función                           -->
+<!-- SECCIÓN: TECH STACK                                               -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-## ⚡ Mi Stack
+## ⚡ Tech Stack
+
+<div align="center">
+
+**Backend & Data**
+
+<img src="https://skillicons.dev/icons?i=php,nodejs,express,js,mysql,mongodb&theme=dark" alt="Backend stack" />
+
+**Drupal Ecosystem**
+
+![Drupal](https://img.shields.io/badge/Drupal-0678BE?style=for-the-badge&logo=drupal&logoColor=white)
+![Drush](https://img.shields.io/badge/Drush-0D1117?style=for-the-badge&logo=gnubash&logoColor=00E5FF)
+![DDEV](https://img.shields.io/badge/DDEV-02A8E2?style=for-the-badge&logo=docker&logoColor=white)
+![Fin](https://img.shields.io/badge/Fin_(Docksal)-2C3E50?style=for-the-badge&logo=docker&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
+
+**Frontend & UI**
+
+<img src="https://skillicons.dev/icons?i=html,css,react&theme=dark" alt="Frontend stack" />
+&nbsp;
+<img src="https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white" alt="Storybook" height="48" />
+
+**Tools**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,postman,linux,bash&theme=dark" alt="Tools" />
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- SECCIÓN: AGENTIC AI ENGINEERING                                   -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
+## 🤖 Agentic AI Engineering
+
+> Diseño **sistemas de agentes** que planifican, delegan y verifican trabajo dentro del ciclo de desarrollo.
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-### 🖥️ Backend (Core)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+### 🧠 Agents & Models
 
-**Lo que sé hacer:**
-- APIs REST con arquitectura MVC
-- Operaciones CRUD completas
-- Models, Services & Routers
-
-### 🗄️ Bases de datos
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-</td>
-<td valign="top" width="50%">
-
-### 🎨 Frontend (Base)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-
-**En progreso:**
-- Diseño responsive
-- SEO básico
-- Interfaces dinámicas
-
-### 🔧 Herramientas
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: AI ENGINEERING — El diferenciador REAL                   -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
-## 🤖 AI Engineering & Agent Orchestration
-
-> No solo uso IA como herramienta — **la orquesto como arquitectura**.
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-### 🧠 Modelos que manejo
-![Claude](https://img.shields.io/badge/Claude-111111?style=flat-square&logo=anthropic&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-111111?style=flat-square&logo=anthropic&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode-6C63FF?style=flat-square&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75FF?style=flat-square&logo=googlegemini&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74AA9C?style=flat-square&logo=openai&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-8E75FF?style=flat-square&logo=googlebard&logoColor=white)
-![GitHub Copilot](https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
-![OpenCode](https://img.shields.io/badge/OpenCode-6C63FF?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01eiIvPjxwYXRoIGQ9Ik0yIDE3bDEwIDUgMTAtNSIvPjxwYXRoIGQ9Ik0yIDEybDEwIDUgMTAtNSIvPjwvc3ZnPg==&logoColor=white)
+![Copilot](https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
 
-### 🛠️ Herramientas & Plataformas
+### 🔌 Integrations
+
+![MCP](https://img.shields.io/badge/MCP_Servers-00E5FF?style=flat-square&logoColor=black)
 ![n8n](https://img.shields.io/badge/n8n-EA4B8B?style=flat-square&logo=n8n&logoColor=white)
-![Lovable](https://img.shields.io/badge/Lovable-FF66C4?style=flat-square&logo=heart&logoColor=white)
 ![Linear](https://img.shields.io/badge/Linear-5E6AD2?style=flat-square&logo=linear&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 
 </td>
 <td valign="top" width="50%">
 
-### ⚙️ Capacidades técnicas en IA
+### ⚙️ Capabilities
 
 | Skill | Descripción |
-|-------|-------------|
-| **Agent Orchestration** | Diseño y coordinación de agentes especializados con roles definidos |
-| **Sub-Agent Management** | Delegación de tareas a sub-agentes autónomos con contexto aislado |
-| **SDD Workflows** | Spec-Driven Development: proposal → specs → design → tasks → apply → verify |
-| **Prompt Engineering** | Optimización de prompts para máxima precisión y eficiencia |
-| **MCP & Skills** | Model Context Protocol y definición de skills especializadas |
-| **AI Tool Integration** | Incorporación de IA en CI/CD, code review, testing y deployment |
-| **Multi-Model Strategy** | Selección de modelos por tarea: speed vs reasoning vs cost |
+| ------- | ------------- |
+| **Agent Orchestration** | Orquestadores que coordinan agentes con roles definidos |
+| **Sub-Agents** | Delegación de tareas con contexto aislado y verificación |
+| **MCP Integration** | Conexión de agentes a herramientas, docs y servicios vía MCP |
+| **Skills & Memory** | Skills reutilizables y memoria persistente entre sesiones |
+| **Spec-Driven Dev** | Specs → design → tasks → apply → verify |
+| **Multi-Model Strategy** | Modelo correcto por tarea: velocidad, razonamiento o costo |
 
 </td>
 </tr>
@@ -146,18 +148,26 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: CERTIFICACIONES — Todas, organizadas                    -->
+<!-- SECCIÓN: EDUCATION & CERTIFICATIONS                               -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-## 📜 Certificaciones
+## 🎓 Education & Certifications
+
+**Técnico en Programación de Software** — SENA · *Graduado*
+
+<details>
+<summary><b>📜 Ver certificaciones (15)</b></summary>
+
+<br/>
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-### 🤖 IA & Desarrollo con IA
+#### 🤖 IA & Desarrollo con IA
+
 | Certificación | Plataforma | Año |
-|---------------|-----------|-----|
+| --------------- | ----------- | ----- |
 | Claude Code in Action | Anthropic | 2025 |
 | Iniciación al Desarrollo con IA | Big School | 2026 |
 | Prompt Engineering | Platzi | 2025 |
@@ -169,9 +179,10 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 </td>
 <td valign="top" width="50%">
 
-### 💻 Desarrollo & Programación
+#### 💻 Desarrollo & Programación
+
 | Certificación | Plataforma | Año |
-|---------------|-----------|-----|
+| --------------- | ----------- | ----- |
 | JavaScript v9 (Alg. & Data Structures) | FreeCodeCamp | 2026 |
 | Fundamentos de Node.js | Platzi | 2025 |
 | React.js | Platzi | 2025 |
@@ -185,67 +196,39 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 </tr>
 </table>
 
+</details>
+
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: PROYECTO DESTACADO                                       -->
+<!-- SECCIÓN: FEATURED PROJECT                                         -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-## 🏗️ Proyecto Destacado
+## 🏗️ Featured Project
 
-<div align="center">
+<table>
+<tr>
+<td>
 
 ### 🅿️ Backend Parking Project
 
-[![Repo](https://img.shields.io/badge/📦_Ver_Repositorio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/4DR14N-DEV/backend-parking-project)
-
-</div>
-
-**API REST para gestión integral de un sistema de parqueadero.**
+**API REST para la gestión integral de un parqueadero.**
 
 ```
-├── Gestión de usuarios (CRUD completo)
-├── Administración de vehículos
-├── Control de celdas de estacionamiento
+├── Usuarios (CRUD completo)
+├── Vehículos y celdas de estacionamiento
 ├── Registro de accesos y salidas
 ├── Sistema de incidencias
 └── Generación de reportes
 ```
 
-**Stack del proyecto:**
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black)
 
----
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: ROADMAP — Visual y claro                                 -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
-## 🎯 Roadmap
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-### 🔄 Aprendiendo ahora
-- [ ] TypeScript — el siguiente nivel
-- [ ] Docker — containerización
-- [ ] Testing con Jest — calidad de código
-- [ ] CI/CD básico — automatización
-
-</td>
-<td valign="top" width="50%">
-
-### 🚀 Próximos objetivos
-- [ ] Proyecto fullstack (React + Node)
-- [ ] Contribuir a Open Source
-- [ ] Primer trabajo como dev
-- [ ] Certificaciones en arquitectura
+[![Repo](https://img.shields.io/badge/Ver_repositorio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/4DR14N-DEV/backend-parking-project)
 
 </td>
 </tr>
@@ -254,61 +237,58 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: ESTADÍSTICAS                                             -->
+<!-- SECCIÓN: ROADMAP                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+
+## 🎯 Roadmap
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### 🔄 Learning Now
+
+- **Storybook** — sistemas de componentes
+- **TypeScript** — tipado en proyectos Node.js
+- **Docker** — contenerización de servicios
+- **CI/CD** — automatización de despliegues
+
+</td>
+<td valign="top" width="50%">
+
+### 🚀 Next Goals
+
+- Profundizar en desarrollo backend con **Drupal** y **PHP**
+- Proyecto fullstack (React + Node)
+- Contribuciones Open Source
+- Arquitectura de software
+
+</td>
+</tr>
+</table>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- SECCIÓN: GITHUB STATS                                             -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 ## 📊 GitHub Stats
 
 <div align="center">
 
-<!-- Stats principales -->
-<img height="160" src="https://github-readme-stats-psi-eight-98.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-&nbsp;&nbsp;
-<img height="160" src="https://github-readme-stats-psi-eight-98.vercel.app/api/top-langs/?username=4DR14N-DEV&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
+<img height="165" src="https://github-readme-stats-psi-eight-98.vercel.app/api?username=4DR14N-DEV&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+&nbsp;
+<img height="165" src="https://github-readme-stats-psi-eight-98.vercel.app/api/top-langs/?username=4DR14N-DEV&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top Languages" />
 
-</div>
+<img src="https://streak-stats.demolab.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
----
-
-## 🔥 Streak Stats
-
-<div align="center">
-
-[<img src="https://github-readme-streak-stats.herokuapp.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true" alt="GitHub Streak" />](https://streak-stats.demolab.com/?user=4DR14N-DEV&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-
-## 🏆 GitHub Trofeos & Resumen
-
-<div align="center">
-
-<!-- Tarjeta de resumen de stats -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=4DR14N-DEV&theme=tokyonight" alt="GitHub Stats Card" />
-
-<!-- Tarjeta de lenguajes -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=4DR14N-DEV&theme=tokyonight" alt="Repos per Language" />
-
-<!-- Productividad -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=4DR14N-DEV&theme=tokyonight&utcOffset=-5" alt="Productive Time" />
-
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: SNAKE — Animación de contribuciones                      -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-
-## 🐍 Contribution Snake
-
-<div align="center">
+<br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" />
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/4DR14N-DEV/4DR14N-DEV/output/github-contribution-snake.svg" />
 </picture>
 
 </div>
@@ -316,28 +296,25 @@ No tengo experiencia laboral **todavía**. Pero tengo constancia, curiosidad, y 
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!-- SECCIÓN: CONTACTO                                                 -->
+<!-- SECCIÓN: CONTACT                                                  -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
-## 📬 Hablemos
+## 📬 Contact
 
 <div align="center">
-¿Buscas un dev junior con hambre de aprender, capacidad real de entregar y mentalidad AI-first?
 
-  Escríbeme — respondo rápido.
-  
-📧 **adrianrpo23@gmail.com** | 📱 **+57 350 365 0525** | 📍 **Medellín, Colombia**
+Abierto a conversar sobre backend, Drupal e ingeniería agéntica.
+
+📧 **<adrianrpo23@gmail.com>** · 📱 **+57 350 365 0525** · 📍 **Medellín, Colombia**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrian-yesid-restrepo-8b9725382/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/4DR14N-DEV)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/573503650525)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adrianrpo23@gmail.com)
 
-</div>
-
----
-
-<div align="center">
+<br/>
 
 <img src="https://komarev.com/ghpvc/?username=4DR14N-DEV&color=00E5FF&style=flat-square&label=Profile+Views" alt="profile views" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,45:0A4B5C,100:0D1117&height=110&section=footer" alt="footer" width="100%" />
 
 </div>
